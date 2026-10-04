@@ -1,0 +1,40 @@
+{
+  "name": "TeamAnanya Quiz Bot",
+  "description": "Advanced Telegram Quiz Bot",
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "API_ID": {
+      "description": "Telegram API ID",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API Hash",
+      "required": true
+    },
+    "CREATOR_BOT_TOKEN": {
+      "description": "Creator Bot token from @BotFather",
+      "required": true
+    },
+    "RUNNER_BOT_TOKEN": {
+      "description": "Runner Bot token from @BotFather",
+      "required": true
+    },
+    "MONGODB_URI": {
+      "description": "MongoDB connection URI",
+      "required": true
+    },
+    "MONGODB_DB_NAME": {
+      "description": "MongoDB database name",
+      "value": "quizbot",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Telegram numeric user ID of the owner",
+      "required": true
+    }
+  }
+}
