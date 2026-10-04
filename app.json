@@ -1,0 +1,182 @@
+{
+  "name": "TeamAnanya Quiz Bot",
+  "description": "Advanced Telegram Quiz Bot with Creator Bot, Runner Bot, MongoDB and optional Mini App.",
+  "keywords": [
+    "telegram",
+    "quiz",
+    "bot",
+    "pyrogram",
+    "python",
+    "mongodb"
+  ],
+  "stack": "heroku-24",
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "env": {
+    "API_ID": {
+      "description": "Telegram API ID from my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API Hash from my.telegram.org",
+      "required": true
+    },
+    "CREATOR_BOT_TOKEN": {
+      "description": "Creator Bot token from @BotFather",
+      "required": true
+    },
+    "RUNNER_BOT_TOKEN": {
+      "description": "Runner Bot token from @BotFather",
+      "required": true
+    },
+    "MONGODB_URI": {
+      "description": "MongoDB Atlas connection URI",
+      "required": true
+    },
+    "MONGODB_DB_NAME": {
+      "description": "MongoDB database name",
+      "value": "quizbot"
+    },
+    "OWNER_ID": {
+      "description": "Telegram numeric user ID of bot owner",
+      "required": true
+    },
+    "ADMIN_IDS": {
+      "description": "Comma-separated Telegram admin IDs",
+      "value": ""
+    },
+    "LOG_GROUP": {
+      "description": "Optional Telegram log group ID",
+      "value": ""
+    },
+    "BOT_GROUP": {
+      "description": "Optional Telegram group ID",
+      "value": ""
+    },
+    "CHANNEL_ID": {
+      "description": "Optional Telegram channel ID",
+      "value": ""
+    },
+    "REQUIRED_SUB_CHANNEL": {
+      "description": "Optional required subscription channel",
+      "value": ""
+    },
+    "FREE_BOT": {
+      "description": "Set True to make premium features free",
+      "value": "True"
+    },
+    "RAZORPAY_KEY_ID": {
+      "description": "Optional Razorpay key ID",
+      "value": ""
+    },
+    "RAZORPAY_KEY_SECRET": {
+      "description": "Optional Razorpay key secret",
+      "value": ""
+    },
+    "PLAN_1_MONTH_AMOUNT": {
+      "description": "1 month plan amount in paise",
+      "value": "9900"
+    },
+    "PLAN_3_MONTH_AMOUNT": {
+      "description": "3 month plan amount in paise",
+      "value": "24900"
+    },
+    "PLAN_1_YEAR_AMOUNT": {
+      "description": "1 year plan amount in paise",
+      "value": "79900"
+    },
+    "PDF_API_BASE": {
+      "description": "Optional PDF generation API",
+      "value": ""
+    },
+    "MINI_APP_DOMAIN": {
+      "description": "Optional public HTTPS Mini App domain",
+      "value": ""
+    },
+    "MINI_APP_HOST": {
+      "description": "Mini App bind host",
+      "value": "0.0.0.0"
+    },
+    "MINI_APP_PORT": {
+      "description": "Mini App port",
+      "value": "8080"
+    },
+    "MINI_APP_REQUIRE_PREMIUM": {
+      "description": "Require premium for Mini App",
+      "value": "false"
+    },
+    "OPENROUTER_DEFAULT_KEYS": {
+      "description": "Optional comma-separated OpenRouter API keys",
+      "value": ""
+    },
+    "GEMINI_URL": {
+      "description": "Optional Gemini API endpoint",
+      "value": "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent"
+    },
+    "GROQ_URL": {
+      "description": "Optional Groq API endpoint",
+      "value": "https://api.groq.com/openai/v1/chat/completions"
+    },
+    "POLLINATIONS_URL": {
+      "description": "Optional Pollinations API endpoint",
+      "value": "https://text.pollinations.ai/openai"
+    },
+    "RATE_LIMIT_WINDOW": {
+      "value": "60"
+    },
+    "RATE_LIMIT_MAX_REQUESTS": {
+      "value": "20"
+    },
+    "SESSION_TIMEOUT": {
+      "value": "3600"
+    },
+    "SESSION_CLEANUP_INTERVAL": {
+      "value": "600"
+    },
+    "CHEAT_SPEED_THRESHOLD": {
+      "value": "3.0"
+    },
+    "WATCHDOG_INTERVAL": {
+      "value": "300"
+    },
+    "PAGE_SIZE": {
+      "value": "10"
+    },
+    "QUESTIONS_PER_PAGE": {
+      "value": "10"
+    },
+    "LEADERS_PAGE_SIZE": {
+      "value": "20"
+    },
+    "CACHE_EXPIRY": {
+      "value": "600"
+    },
+    "CREATOR_RATE_LIMIT_DEFAULT_HITS": {
+      "value": "10"
+    },
+    "CREATOR_RATE_LIMIT_DEFAULT_WINDOW": {
+      "value": "1800"
+    },
+    "CREATOR_RATE_LIMIT_CREATE_HITS": {
+      "value": "4"
+    },
+    "CREATOR_RATE_LIMIT_CREATE_WINDOW": {
+      "value": "1800"
+    },
+    "CREATOR_RATE_LIMIT_STRICT_HITS": {
+      "value": "1"
+    },
+    "CREATOR_RATE_LIMIT_STRICT_WINDOW": {
+      "value": "3600"
+    }
+  }
+}
