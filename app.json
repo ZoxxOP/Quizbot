@@ -8,11 +8,11 @@
   ],
   "env": {
     "API_ID": {
-      "description": "Telegram API ID",
+      "value": "20201263",
       "required": true
     },
     "API_HASH": {
-      "description": "Telegram API Hash",
+      "value": "5d613bbdd258ea7f749d6bb0513e7a98",
       "required": true
     },
     "CREATOR_BOT_TOKEN": {
@@ -24,16 +24,15 @@
       "required": true
     },
     "MONGODB_URI": {
-      "description": "MongoDB connection URI",
+      "value": "mongodb+srv://pusers:adcreation@adcreation.k8oapou.mongodb.net/",
       "required": true
     },
     "MONGODB_DB_NAME": {
-      "description": "MongoDB database name",
       "value": "quizbot",
       "required": true
     },
     "OWNER_ID": {
-      "description": "Telegram numeric user ID of the owner",
+      "description": "Telegram numeric user ID of owner",
       "required": true
     }
   }
